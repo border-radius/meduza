@@ -73,7 +73,9 @@ blockquote {
 </head>
 <body>
 	<h1>{{title}}</h1>
+	{{^content.body}}
 	<h2>{{description}}</h2>
+	{{/content.body}}
 	{{#image.large_url}}
 	<img src="https://meduza.io{{image.large_url}}" alt="{{title}}">
 	{{/image.large_url}}
